@@ -17,6 +17,7 @@ linkedList.add("Tash");
 linkedList.prepend("Gabriela");
 linkedList.prepend("Joaquin");
 linkedList.prepend("Virginia");
+linkedList.remove("Tash");
 console.log(linkedList);
 
 

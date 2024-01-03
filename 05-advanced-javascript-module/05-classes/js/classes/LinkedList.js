@@ -26,22 +26,22 @@ export class LinkedList{
 
     remove(objValue){
         //check is not empty
-        if(!isEmpty()){
+        if(!this.isEmpty()){
             if(this._node.value === objValue ){ //check if is in the first node
                 this._node = this._node.next;
             }else{ //if is not in the first node
-                /*
                 let current = this._node;
+                let nextNode = this._node.next;
                 let found = false;
-                while(current.next !== null && !found){
-                    if(current.next.value === objValue){
+                while(nextNode !== null && !found){
+                    if(nextNode.value === objValue){
                         found = true;
-
+                        current.next = nextNode.next;
                     }else{
-                        current = current.next;
+                        current = nextNode;
+                        nextNode = nextNode.next;
                     }
                 }
-                */
             }
         }
     }
